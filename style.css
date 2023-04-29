@@ -1,0 +1,246 @@
+
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    /* border: 5px solid yellow; */
+    min-height: 100vh;
+    /* width: 100vw; nemusíme nastavovat*/
+    background: linear-gradient(rgba(255, 0, 0, 0.462),rgba(0, 0, 255, 0.514)),
+                url(img/main-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 70px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    text-align: center;
+
+}
+
+header p {
+    font-size: 40px;
+    color:aliceblue;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* section history */
+
+.history {
+    display: flex;
+    flex-direction: row;
+    background: purple;
+    justify-content: space-evenly;
+}
+
+.history__box {
+    width: 600px;
+    color:aliceblue;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    margin: 40px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* section photos */
+.photos {
+    background: linear-gradient(rgba(255, 0, 0, 0.462),rgba(0, 0, 255, 0.514)),
+                url(img/main-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.photos img {
+    width: 400px;
+    height: 255px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+}
+
+/* section motto */
+.motto {
+    height: 209px;
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.motto p {
+    text-align: center;
+    font-size: 20px;
+    color:aliceblue;
+    margin-left: 50px; /*lze použít i padding */
+    margin-right: 50px; /*lze použít i padding */
+}
+
+/* section team */
+.team {
+    background: linear-gradient(rgba(255, 0, 0, 0.462),rgba(0, 0, 255, 0.514)),
+    url(img/main-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px 80px;
+} 
+
+.team__employee {
+    flex-basis: 280px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__employee p {
+    text-align: center;
+    padding: 15px;
+}
+
+.team__employee img {
+    padding: 15px;
+    border-radius: 50%;  
+}
+
+/* .team__employee--1 {
+    flex-grow: 2;
+}
+
+.team__employee--2 {
+    flex-grow: 1;
+}
+
+.team__employee--3 {
+    flex-grow: 1;
+} */
+
+/* section services */
+.services {
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;  
+    /* flex-wrap: wrap;  */
+    gap: 20px 20px;
+    padding: 40px;
+}
+
+.services__box {
+    flex-basis: 280px;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.services__box--1 {
+    flex-shrink: 1;
+    order: 2;
+}
+
+.services__box--2 {
+    flex-shrink: 2;
+}
+
+.services__box--3 {
+    flex-shrink: 3;
+    order: 1;
+}
+
+/* section partners */
+.partners {
+    min-height: 300px;
+    background: linear-gradient(rgba(255, 0, 0, 0.462),rgba(0, 0, 255, 0.514)),
+    url(img/main-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 50px;
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+}
+
+.partners img{
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+/* používá se, když máme dostatek prostoru, kam prvky posouvat (např. height: 800px */
+/* .partners__logo--1 {
+    align-self: flex-start;
+}
+
+.partners__logo--2 {
+    align-self: center;
+}
+
+.partners__logo--3 {
+    align-self: flex-end;
+} */
+
+/* footer */
+footer {
+    background: purple;
+    min-height: 50px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+
+}
+
+footer p {
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+}
